@@ -1,0 +1,72 @@
+{
+  "name": "web-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bugs": {
+    "url": "https://github.com/yaodongyi/javascript/issues"
+  },
+  "homepage": "https://github.com/yaodongyi/javascript/tree/master/publicity-page",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "WEBPACK_ENV=build webpack -p",
+    "dev": "cross-env WEBPACK_ENV=dev webpack-dev-server"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.5.5",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.0-beta.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^4.5.2",
+    "cross-env": "^5.2.0",
+    "css-loader": "^1.0.0",
+    "cssnano-preset-advanced": "^4.0.7",
+    "es6-promise": "^4.2.5",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^2.0.0",
+    "font-awesome-webpack": "^0.0.5-beta.2",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "html-webpack-plugin": "^3.2.0",
+    "html-withimg-loader": "^0.1.16",
+    "image-webpack-loader": "^4.3.1",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "mini-css-extract-plugin": "^0.4.3",
+    "node-notifier": "^5.4.3",
+    "portfinder": "1.0.16",
+    "postcss-aspect-ratio-mini": "^1.0.1",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-px-to-viewport-opt": "0.0.4",
+    "postcss-pxtorem": "^4.0.1",
+    "postcss-url": "^8.0.0",
+    "postcss-viewport-units": "^0.1.6",
+    "postcss-write-svg": "^3.0.1",
+    "style-loader": "^0.23.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9",
+    "webpack-merge": "^4.1.4"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.5.5",
+    "autoprefixer": "^9.6.1",
+    "axios": "^0.18.0",
+    "chalk": "^2.4.2",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.4.1",
+    "viewport-units-buggyfill": "^0.6.2"
+  },
+  "browserslist": [
+    "last 30 versions",
+    "> 2%",
+    "Firefox >= 10",
+    "ie 6-11"
+  ]
+}

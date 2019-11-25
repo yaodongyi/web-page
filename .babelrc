@@ -1,0 +1,9 @@
+{
+    "presets": [
+        "@babel/preset-env"
+    ],
+    "plugins": [
+        "@babel/plugin-syntax-dynamic-import", // 用于设置import()
+        "@babel/plugin-transform-runtime" // 异步函数 （async）时，出现regeneratorRuntime is not defined 错误
+    ]
+} 
