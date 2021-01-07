@@ -1,0 +1,8 @@
+version: '3.1'
+
+services:
+  webpage:
+    image: web-page-webpage
+    restart: always
+    ports:
+      - 1233:80

@@ -8,8 +8,10 @@
 require('../assets/js/common/navigator.js');
 import '../assets/style/style.less';
 
+console.log($tools);
+
 // scroll-style
-$('ul.note li').click(function(e) {
+$('ul.note li').click(function (e) {
   $('ul.note li').attr('class', '');
   $(this).attr('class', 'active');
   $('html,body').animate(
@@ -28,21 +30,13 @@ function scrollFun() {
   let fourth = $('.fourth').offset().top;
   $(`ul.note li`).attr('class', '');
   if (h_scrTop >= header && h_scrTop < second - 50) {
-    $(`ul.note li`)
-      .eq(0)
-      .attr('class', 'active');
+    $(`ul.note li`).eq(0).attr('class', 'active');
   } else if (h_scrTop >= second - 50 && h_scrTop < third - 50) {
-    $(`ul.note li`)
-      .eq(1)
-      .attr('class', 'active');
+    $(`ul.note li`).eq(1).attr('class', 'active');
   } else if (h_scrTop >= third - 50 && h_scrTop < fourth - 50) {
-    $(`ul.note li`)
-      .eq(2)
-      .attr('class', 'active');
+    $(`ul.note li`).eq(2).attr('class', 'active');
   } else {
-    $(`ul.note li`)
-      .eq(3)
-      .attr('class', 'active');
+    $(`ul.note li`).eq(3).attr('class', 'active');
   }
 }
 scrollFun();
@@ -50,16 +44,16 @@ $(document).scroll($tools.debounce(scrollFun, 100));
 // scroll-style end
 
 // 初始化悬浮---优势
-$(function() {
+$(function () {
   $('.second ul li').attr('class', 'transition');
 });
 
 // qrcode弹窗
 $('.f-mask-qrcode').hide();
-$('.download-btn').click(function() {
+$('.download-btn').click(function () {
   $('.f-mask-qrcode').css({ opacity: 1 });
   $('.f-mask-qrcode').show();
 });
-$('.f-mask-qrcode').click(function() {
+$('.f-mask-qrcode').click(function () {
   $('.f-mask-qrcode').hide();
 });

@@ -7,7 +7,7 @@
 importScripts('./static/js/workbox-sw.js'); // workbox
 // 请勿改写以下字段，swList，pwa_version，用于动态更新。
 var swList = ['index.html','a.html','b.html','c.html','d.html','e.html','f.html'];
-let pwa_version = 'version:YkZ-1574666903290'; // 提交的版本号，用以更新service-worker;
+let pwa_version = 'version:dPe-1609995329068'; // 提交的版本号，用以更新service-worker;
 let cacheList = ['/', ...swList]; // 配置需要缓存的列表
 /**
  * 每次serviceWorker文件有更新的时候，会先进入install, 然后触发activate, 更新缓存。
