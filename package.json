@@ -11,9 +11,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "WEBPACK_ENV=build webpack -p",
     "dev": "cross-env WEBPACK_ENV=dev webpack-dev-server",
-    "scp_dist": "npm run build && scp -r dist root@49.233.131.16:/home",
-    "scp_wk": "scp fission.html root@49.233.131.16:/home/",
-    "scp_nginx": "scp -r Nginx root@49.233.131.16:/home/Nginx",
     "sh": "./build.sh"
   },
   "devDependencies": {
